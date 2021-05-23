@@ -1,3 +1,17 @@
-p {
-  font-family: Lato;
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px auto 300px;
+  min-height: 100%;
+  overflow-x: auto;
+}
+.grid-item {
+  border: 1px solid black;
+}
+
+.column-1 {
+}
+.column-2 {
+  min-width: 100px;
+}
+.column-3 {
 }
