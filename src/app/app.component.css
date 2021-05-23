@@ -1,8 +1,8 @@
 .grid-container {
   display: grid;
   grid-template-columns: 200px auto 300px;
-  min-height: 100%;
   overflow-x: auto;
+  height: 100%;
 }
 .grid-item {
   border: 1px solid black;

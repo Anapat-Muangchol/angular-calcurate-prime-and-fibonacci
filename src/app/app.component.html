@@ -1,5 +1,17 @@
 <div class="grid-container">
-  <div class="grid-item column-1">1</div>
-  <div class="grid-item column-2">2</div>
-  <div class="grid-item column-3">3</div>
+  <div class="grid-item column-1">
+    <input
+      type="text"
+      [(ngModel)]="inputNumber"
+      (keypress)="numberOnly($event)"
+      (change)="changeInputNumber()"
+    />
+  </div>
+  <div class="grid-item column-2">
+    <select [(ngModel)]="modeSelected" (change)="changeModeSelected()">
+      <option [value]="'P'">isPrime</option>
+      <option [value]="'F'">isFibonacci</option>
+    </select>
+  </div>
+  <div class="grid-item column-3">{{ answer }}</div>
 </div>
